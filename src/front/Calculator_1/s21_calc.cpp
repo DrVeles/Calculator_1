@@ -5,7 +5,7 @@
 s21_calc::s21_calc(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::s21_calc) {
   ui->setupUi(this);
-  setWindowTitle("Calculator by jenniffr (Frolov)");
+  setWindowTitle("Calculator by Vasiliy");
   setFixedSize(width(), height());
   s21_calc::initial_graph();
 

@@ -21,10 +21,16 @@ install: uninstall
 	@cmake -B build "front/Calculator_1" 
 	@make -C build Calculator_1
 	@cp -R build/Calculator_1.app ../
-	-$(OPEN_COMAND) ../Calculator_1.app
+	@rm -rf ./build/
+	@echo "======================================"
+	@echo "==> INSTALLED ../Calculator_1.app  <=="
+	@echo "======================================"
 
 uninstall: clean
 	-@rm -rf build/ ../Calculator_1.app/
+	@echo "======================================"
+	@echo "===========> UNINSATLLED <============"
+	@echo "======================================"
 
 dvi:
 	$(OPEN_COMAND) ../README.md

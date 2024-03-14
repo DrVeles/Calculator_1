@@ -22,9 +22,7 @@ void unary_calculations(s21_stack_t* polish, s21_stack_t* temp_stack) {
     pop(temp_stack, &temp_node);
     temp_node.value *= -1;
     push(temp_stack, &temp_node);
-  } else if (last_node.operators == '+') {
-    ;
-  } else {
+  } else if (last_node.operators != '+') {
     pop(temp_stack, &temp_node);
     switch (last_node.math_foo) {
       case sin_foo:

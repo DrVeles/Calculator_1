@@ -69,8 +69,8 @@ s21_calc::s21_calc(QWidget *parent)
           SLOT(click_to_result()));
 }
 
-s21_calc::~s21_calc() { 
-  delete ui; 
+s21_calc::~s21_calc() {
+  delete ui;
   ui->customPlot->clearPlottables();
   ui->customPlot->clearItems();
 }
